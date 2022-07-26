@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7fb0a02-544d-440d-ae7f-f05055284c22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/controller/message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/data/message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/router/message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/image/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/json/logo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/logo/logo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/logo/logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/privateRoute.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/chats.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/redux/slices/themeSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +63,7 @@
       <updated>1658373318870</updated>
       <workItem from="1658373320598" duration="50127000" />
       <workItem from="1658731473802" duration="12916000" />
-      <workItem from="1658745775626" duration="34934000" />
+      <workItem from="1658745775626" duration="35100000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,93 @@
+.scene {
+  perspective: 400px;
+}
+
+.circle1 {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: circle 1.7s linear;
+  animation-fill-mode: forwards;
+}
+
+.circle2 {
+  animation: circle 2s linear;
+}
+
+.circle3 {
+  animation: circle 2.3s linear;
+}
+
+.rotate1 {
+  transform-style: preserve-3d;
+  transform: rotate(0%);
+  animation: rotate3dReverse 7s infinite linear;
+  transform-origin: center;
+}
+
+.rotate2 {
+  transform-style: preserve-3d;
+  transform: rotate(0%);
+  animation: rotateReverse 5s infinite linear;
+  transform-origin: center;
+}
+
+.rotate3 {
+  transform-style: preserve-3d;
+  transform: rotate(0%);
+  animation: rotate 5s infinite linear;
+  transform-origin: center;
+}
+
+.rotate4 {
+  transform-style: preserve-3d;
+  transform: rotate(0%);
+  animation: rotate3d 5s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes circle {
+  0% {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+  }
+  100% {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+@keyframes rotateReverse {
+  0% {
+    transform: rotate(365deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: translateZ(0px) rotate3d(0,0,0);
+  }
+  100% {
+    transform: translateZ(0px) rotate3d(1,0,1,360deg);
+  }
+}
+
+@keyframes rotate3dReverse {
+  0% {
+    transform: translateZ(0px) rotate3d(1,0,1,360deg);
+  }
+  100% {
+    transform: translateZ(0px) rotate3d(0,0,0);
+  }
+}

@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, {AxiosError} from "axios";
+import {API, errorFunc} from "./api";
 
 export type loginData = {
     email: string,
@@ -10,22 +11,7 @@ export type signUpData = loginData & {
     userName: string
 }
 
-export const API = axios.create({
-    baseURL: 'http://localhost:8080',
-    headers: {
-        Accept: "application/json",
-    },
-});
 
-const errorFunc = (error: any) => {
-    if (error instanceof AxiosError && error.response) {
-        if (typeof error.response.data.message !== 'undefined') {
-            return error.response.data.message;
-        }
-        return error.response.data;
-    }
-    throw error;
-}
 
 export const AuthService = {
     signIn: createAsyncThunk(
@@ -56,3 +42,5 @@ export const AuthService = {
         }
     )
 }
+
+

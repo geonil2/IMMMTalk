@@ -10,10 +10,11 @@ const SignIn = () => {
   const dispatch = useAppDispatch();
   const { loading, error, data } = useAppSelector(state => state.authSlice);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    !data.id && loading === false ? setLoginData({ email: '', password: '' }) : navigate('/chats');
-  }, [data])
+  //
+  // useEffect(() => {
+  //   if (!data.id )
+  //   !data.id && loading === false ? setLoginData({ email: '', password: '' }) : navigate('/chats');
+  // }, [data])
 
   return (
     <section className="sm:w-[400px] w-[250px] h-1/2 flex flex-col justify-center items-center bg-white duration-200 p-5 drop-shadow-[0_35px_35px_rgba(25,93,174,1)] hover:drop-shadow-none dark:bg-[#1b1b1b]">

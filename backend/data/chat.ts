@@ -98,6 +98,14 @@ export async function update(id: number, title: string) {
     return data.save();
   });
 }
+
+export async function updateNewText(id: number, text: string) {
+  return Chat.findByPk(id)
+    .then((data: any) => {
+      data.lastMessage = text;
+      return data.save();
+    });
+}
 //
 // export async function remove(id: number) {
 //     return Chat.findByPk(id)

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {AuthService} from "../../services/authService";
 
-type FetchState = {
+type UserData = {
     id: number,
     email: string,
     password: string,
@@ -17,7 +17,7 @@ type FetchState = {
 export type SignInState = {
     loading: boolean,
     error: string | undefined,
-    data: FetchState,
+    data: UserData,
 }
 
 const initialState: SignInState = {
@@ -57,7 +57,7 @@ export const authSlice = createSlice({
             })
             .addCase(AuthService.signIn.fulfilled, (state, action) => {
                 state.loading = false;
-                setTokenInStorage(action.payload.token)
+                setTokenInStorage(action.payload)
                 state.data = action.payload;
             })
             .addCase(AuthService.signIn.rejected, (state, action) => {
@@ -92,10 +92,10 @@ export const authSlice = createSlice({
 
 export const { signOut } = authSlice.actions;
 
-const setTokenInStorage = (token: string) => {
-    window.localStorage.setItem('loginToken', token);
+const setTokenInStorage = (userData: UserData) => {
+    window.localStorage.setItem('UserData', JSON.stringify(userData));
 }
 
 const removeTokenInStorage = () => {
-    window.localStorage.removeItem('loginToken');
+    window.localStorage.removeItem('UserData');
 }

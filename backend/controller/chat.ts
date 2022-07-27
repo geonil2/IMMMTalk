@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { getSocketIO } from '../connection/socket';
 import * as chatRepository from '../data/chat';
 import {parse} from "dotenv";
+import {findById} from "../data/auth";
 
 export async function getChats(req: Request, res: Response) {
   const id = req.query.id;

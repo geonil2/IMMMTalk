@@ -32,7 +32,7 @@ export async function signIn(req: Request, res: Response) {
   const user = await userRepository.findByEmail(email);
   console.log(user, "!@#!@#")
   if (!user) {
-    return res.status(401).json({message: 'Invalid user'});
+    return res.status(401).json({ message: 'Invalid user' });
   }
   //@ts-ignore
   const userData = user.dataValues;
@@ -40,7 +40,7 @@ export async function signIn(req: Request, res: Response) {
 
   if (!isValidPassword) {
     console.log('비번다르다')
-    return res.status(401).json({message: 'Invalid user'});
+    return res.status(401).json({ message: 'Invalid user' });
   }
 
   const token = createJwtToken(userData.id);

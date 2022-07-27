@@ -10,7 +10,6 @@ export const isAuth = async (req: Request, res: Response, next: NextFunction) =>
     if (!(authHeader && authHeader.startsWith('Bearer '))) {
         return res.status(401).json(AUTH_ERROR);
     }
-    console.log(authHeader, 'authHeader')
     const token = authHeader.split(' ' )[1];
 
     jwt.verify(

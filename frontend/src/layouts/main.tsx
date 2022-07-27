@@ -7,10 +7,17 @@ import PrivateRoute from "../components/privateRoute";
 import {useAppSelector} from "../redux/store";
 
 const Main = () => {
+  const { data } = useAppSelector(state => state.authSlice);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (data.id) {
+      navigate('/chats')
+    }
+  }, [data])
 
   return (
     <main className="w-full h-screen flex flex-col justify-center items-center text-[#1b1b1b] bg-white dark:text-[#FFFFFF] dark:bg-[#1b1b1b]">
-      {/*{authReducers.data.id ? <Chats /> : <SignIn />}*/}
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
